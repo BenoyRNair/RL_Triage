@@ -82,7 +82,8 @@ write.csv(cor_stats_02  ,"CorrelationAnalysis.csv")
 
 df_minimal_01 <- data.frame(df_08_drop_ecodesmachinery)
 #add row id
-df_minimal_01$row_id <- 1:nrow(df_minimal_01)
+row_id <- 1:nrow(df_minimal_01)
+df_minimal_01 <- cbind(row_id, df_minimal_01)
 
 save(df_minimal_01,file="df_minimal_01.RData")
 write.csv(df_minimal_01,file="df_minimal_01.csv")
