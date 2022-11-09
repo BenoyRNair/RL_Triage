@@ -50,7 +50,7 @@ table(df_minimal_01_cesi_merged_temp$cesi)
 # 150000 150000 150000
 
 # Shuffle and finalize
-df_minimal_01_cesi_merged  = data.frame(df_minimal_01_cesi_merged_temp [sample(1:nrow(df_minimal_01_cesi_merged_temp )), ])
+df_minimal_01_cesi_merged <- data.frame(df_minimal_01_cesi_merged_temp [sample(1:nrow(df_minimal_01_cesi_merged_temp )), ])
 # 450,000 obs of 576 variables
 
 rownames(df_minimal_01_cesi_merged) <- NULL
